@@ -1,0 +1,147 @@
+body{
+    height: 98vh;
+    background-color: black;
+    margin: 0px
+}
+main{
+    height: 100%;
+    display: grid;
+    grid-template-rows: (4,1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    color:white;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 40px;
+
+}
+
+h1{
+    font-family: 'Oswald';
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 30px;
+    margin-top:  20px;
+
+}
+h2{
+    font-family: "Sonsie One";
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+
+   .box {
+    height: 100%;
+    background-color:9 white;
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+   .one{
+    grid-row: span 1;
+    grid-column: span 1;
+    background-image: url("images/lake.jpg");
+    background-position: center; 
+  }
+   .two{
+    grid-row: span 1;
+    grid-column: span 1;
+    background-image: url("images/empire.jpg");
+    background-position: center; 
+  }
+  .three{
+    grid-row: span 1;
+    grid-column: span 1;
+    background-image: url("images/person.jpg");
+    background-position: center; 
+  }
+  .four{
+    grid-row: span 1;
+    grid-column: span 1;
+    background-image: url("images/tree.jpg");
+    background-position: center; 
+  }
+  .five, .six, .seven, .eight{
+      display: none;
+  }
+  
+  h3{
+    border-bottom:2px dotted gray;
+       color:black;
+       background-color:white;
+       margin-bottom: 300px;
+       padding:20px;
+       font-family: "EB Garamond";
+       font-size: 20px;
+       font-weight: bold;
+    }
+
+
+
+  @media only screen and (min-width: 600px) {
+    body{
+        height: 98vh;
+        margin: 0px;
+        
+    }
+    main{
+        height: 100%;
+        display: grid;
+        grid-template-rows: (2,1fr);
+        grid-template-columns:repeat(4,1fr);
+        grid-gap: 1px;
+        color:white;
+        margin-left: 200px;
+        margin-top:  150px;
+        margin-right: 50px;
+        margin-bottom: 200px;
+    }
+   
+       .box {
+        height: 100%;
+        background-color: white;
+        display: grid;
+        grid-row: span 1;
+        grid-column: span 1;
+        
+    }
+    .five{
+  grid-row: span 1;
+  grid-column: span 1;
+  background-image: url("images/geo.jpg");
+  background-position: center;
+   
+   }
+   .six{
+    grid-row: span 1;
+    grid-column: span 1;
+    background-image: url("images/sand.jpg");
+    background-position: center; 
+   }
+   .seven{
+   grid-row: span 1;
+  grid-column: span 1;
+  background-image: url("images/bridge.jpg");
+  background-position: center; 
+   }
+
+   .eight{
+    grid-row: span 1;
+    grid-column: span 1;
+    background-image: url("images/lens.jpg");
+    background-position: center; 
+   }
+    h3{
+        color: black;
+        background-color: white;  
+        margin-bottom: 300px;
+       
+    }
+}
